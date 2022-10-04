@@ -8,7 +8,9 @@ class RandomNumberManager:
         self.restored = False
         return
 
-    def restoreState(self):
+    def restoreState(self, filename = None):
+        if (not (filename is None)):
+            self.filenameState = filename
         if (os.path.exists(self.filenameState)):
             with  open(self.filenameState,'r') as fileobj:
                 lines = fileobj.readlines()
@@ -30,10 +32,12 @@ class RandomNumberManager:
         self.restored = True
         return
 
-    def storeState(self):
+    def storeState(self, filename = None):
         if (not self.restored):
             print('Warning: not restored RandomState in Random Number Manager.')
             return
+        if (not (filename is None)):
+            self.filenameState = filename
         rngstate = np.random.get_state()
         with open(self.filenameState,'w') as fileobj:
             print(rngstate[0],file=fileobj)
