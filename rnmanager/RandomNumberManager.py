@@ -8,6 +8,7 @@ class RandomNumberManager:
         self.restored = False
         return
 
+    ''' restore a random number stream state from a file or random seed. '''
     def restoreState(self, filename = None):
         if (not (filename is None)):
             self.filenameState = filename
@@ -32,6 +33,7 @@ class RandomNumberManager:
         self.restored = True
         return
 
+    ''' save a random number stream state into a file. '''
     def storeState(self, filename = None):
         if (not self.restored):
             print('Warning: not restored RandomState in Random Number Manager.')
