@@ -1,6 +1,6 @@
 [project]
 name = "rnmanager"
-version = "0.1"
+version = "0.2"
 description = "Manage random number stream state."
 readme = "README.md"
 license = {file = "LICENSE"}
