@@ -1,1 +1,1 @@
-from RandomNumberManager import RandomNumberManager
+from .RandomNumberManager import RandomNumberManager
