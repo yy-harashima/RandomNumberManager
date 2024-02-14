@@ -10,3 +10,6 @@ authors = [
 dependencies = [
 	     "numpy",
 ]
+
+[tool.setuptools]
+package-dir = {"" = "src/site_requests"}
