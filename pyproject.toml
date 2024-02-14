@@ -10,6 +10,3 @@ authors = [
 dependencies = [
 	     "numpy",
 ]
-
-[tool.setuptools]
-package-dir = {"" = "rnmanager"}
