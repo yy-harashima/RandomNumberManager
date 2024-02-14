@@ -2,7 +2,7 @@
 name = "RandomNumberManager"
 version = "0.1"
 description = "Manage random number stream state."
-readme = {file = "README.md"}
+readme = "README.md"
 license = {file = "LICENSE"}
 authors = [
 	{name = "yy-harashima"}
